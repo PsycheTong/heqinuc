@@ -1,0 +1,268 @@
+
+.navbar {
+	
+	font-size:2.2rem;
+	height:60px;
+	border:0;
+	background-color:rgba(0,0,0,0.7);
+	
+}
+ body,html{
+	width:100%;
+    height:100%;	
+	color:#666;
+	font-size:10px;
+	font-family:"微软雅黑";
+ }
+.navbar .container  {
+    padding-top:5px;
+}
+.navbar-brand{
+	background-image:url('../img/home/logo-heqin.png');
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-position:center center;
+	width:100px;
+}
+.navbar .nav{
+	background-color:rgba(0,0,0,0.7);
+   
+}
+.navbar .nav li >a{
+	color:#999;
+	font-size:2rem;
+} 
+.navbar .nav li >a.active{
+	color:#fff;
+}
+.navbar .nav li{
+	float:right;
+}
+.navbar .nav li >a:hover{
+	color:#fff;
+}
+.navbar .navbar-header .nav.navbar-nav.navbar-right{
+	justify-content:right;
+}
+
+
+li,a {background-color:transparent;text-decoration:none;} 
+li,a:visited {background-color:transparent;} 
+li,a:hover {background-color:transparent;} 
+li,a:active {background-color:transparent;} 
+.nav-two{
+	position:fixed;
+	top:3rem;
+	width:100%;
+	z-index:18;
+	display:none;
+	height: 100%;
+}
+.navBlur{
+	position:absolute;
+	top:-10%;
+	z-index:1;
+	left:-10%;
+	width:120%;
+	height:120%;
+	background-image:url('../img/home/banner.png');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	background-color:rgba(0,0,0,0.7);
+	filter: blur(20px);
+}
+
+.nav-two .nav{
+	position:absolute;
+	z-index:13;
+	top:20%;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.0);
+	margin:0;
+}
+.nav-two .nav li>a{
+	text-align:center;
+	height:4rem;
+	border-bottom:dotted 1px 999;
+	padding-bottom:1rem;
+	font-size:2rem;
+	color:#999;
+}
+
+.nav-two .nav li>a.active{
+		text-align:center;
+	height:4rem;
+	font-size:2rem;
+	color:#fff;
+	background-color:transparent;
+}
+.navbar-toggle1{
+	
+	position:absolute;
+	top:-4%;
+	right:0%;
+	
+	z-index:14;
+	display:block !important;
+}
+.navbar-toggle1>button>span{
+	background-color:#999;
+}
+.back{
+	position:absolute;
+	bottom:10rem;
+	left:30%;
+	display:block;
+	width:40%;
+	height:4rem;
+	color:#999;
+	z-index:14;
+	border-radius:10px;
+	font-size:2rem;
+	line-height:4rem;
+	border:solid 1px #999;
+	text-align:center;
+}
+.backHover{
+	background-color:#343640;
+}
+.navbar .nav{
+	    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color:rgba(0,0,0,0.7);
+	
+}
+.navbar-default .navbar-toggle {
+    border-color:rgba(0,0,0,0.0);
+}
+.row.my-head{
+	background-image:url('../img/other/banner.png');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	height:29rem;
+	width:100%;
+	margin:0;
+	padding:0;
+	margin-bottom:20px;
+}
+
+.my-head .container>h1{
+	
+	font-size:3rem;
+	color:#fff;
+	z-index:2;
+	padding-top:14rem;
+}
+
+.left-side {
+	margin-bottom:40px;
+}
+.side-bar .list-group-item{
+	height:3rem;
+	border:0;
+	border-radius:3px;
+    font-size:1.8rem;
+	line-height:3rem;
+	padding-top:0;
+	padding-bottom:0;
+    
+    color:#a3a5a6;
+}
+a:hover{
+	text-decoration:none;
+}
+.side-bar .list-group-item:hover{
+	color:#a3a5a6;
+}
+.side-bar{
+	margin:0;
+
+}
+.side-bar .list-group-item.large{
+    height:4rem;
+	font-size:2.2rem;
+	line-height:4rem;
+	padding-top:0;
+	padding-bottom:0;
+    font-weight:600;
+	border:0;
+	border-radius:3px;
+	margin-top:1rem;
+	color:#666;
+}
+.slarge{
+	background-color:#f4f4f4;
+}
+.side-bar .list-group-item.active{
+	color:#fff;
+	background-color:#337ab7;
+}
+.breadcrumb .breadcrumb-item>a{
+	
+	font-size:1.8rem;
+	color:#999;
+}
+.breadcrumb .breadcrumb-item:focus{
+	border:0;
+}
+.breadcrumb {
+	background-color:transparent;
+}
+.btn-download{
+	float:right;
+	margin-top:15px;
+}
+.container p{
+	font-size:1.8rem;
+	line-height:2.4rem;
+	color:#666;
+}
+.download-h1{
+	font-size:3rem;
+	color:#337ab7;
+	padding-bottom:20px;
+}
+.download-row{
+     padding-top:20px;
+	 padding-bottom:30px;
+}   
+.guide-pic{
+	width:100%;
+}
+.roe-pic{
+	
+}
+.webAPI{
+	padding:20px;
+	
+}
+.foot{
+	display:block;
+	width:100%;
+	height:10rem;
+	background-color:#f8f8f8;
+	
+}
+.foot>p{
+   	text-align:center;
+	color:#999;
+    font-size:1.4rem;
+	line-height:2rem;
+}
+.fifth
+{
+	display:block;
+	width:100%;
+	height:10rem;
+	background-color:#f8f8f8;
+}
+.fifth p{
+	text-align:center;
+	color:#999;
+    font-size:1.4rem;
+	line-height:2rem;
+}
