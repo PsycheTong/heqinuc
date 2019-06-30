@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+  <head>
+    <meta charset = "utf-8">
+    <title>和勤联创技术有限公司</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/><link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/contact_us.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+    <style type = "text/css">
+	    body,html{
+		    font-family: "Arial","Microsoft YaHei" !important;
+           
+		}
+	</style>
+</head>
+<body style = "font-family: 'Arial','Microsoft YaHei' !important;">
+      	   <!-- 导航条部分-->	   
+	   <nav class = "col col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-default navbar-fixed-top">
+	        <div class = "container">
+	        <div class = "navbar-header">
+	    	    <a class = "navbar-brand" ></a>
+	    	<button class="navbar-toggle" onclick = "navTap()">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+	    	</div>
+	    	 <div class = "collapse navbar-collapse" id = "menu">
+	    	    <ul class = "nav navbar-nav navbar-right hidden-tablet">
+	    	    		 <li><a  class = "href  active" href="contact_us.html">联系我们</a></li>
+	    	    	     <li><a  class = "href" href="about_us.html">关于我们</a></li>
+	    	    	     <li><a  class = "href " href="platform.html">开放平台</a></li>
+	    	    	     <li><a  class = "href" href="example.html">核心技术与案例</a></li>
+	    	    	     <li><a  class = "href " href="index.html">首页</a></li>
+	            </ul>
+				
+			</div>
+	    	</div>
+	    	
+	    </nav>
+	    <div class = " container-fluid nav-two">
+		    <div class = "navBlur"></div>
+			<nav class="navbar-toggle1 container"><button class="navbar-toggle" onclick = "navTap()">
+               <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+			  </button></nav>
+			  <ul class = "nav navbar-nav">
+	    	    		<li><a  class = "href" href="index.html">首页</a></li>
+	                    <li><a  class = "href" href="example.html">核心技术与案例</a></li>
+	    	    	    <li><a  class = "href " href="platform.html">开放平台</a></li>
+	    	    	    <li><a  class = "href" href="about_us.html">关于我们</a></li>
+	    	    	    <li><a  class = "href  active" href="contact_us.html">联系我们</a></li>
+	    	  </ul>
+			 <div class = "back">返回首页 </div>
+			  
+		</div>
+	
+	
+	<!--头图部分—-->
+        <div class = "row my-head">
+		   <div class = "container">
+		       <h1>和勤联创技术有限公司</h1>
+		   </div>
+		</div>	
+       <div class = "container">
+	       <h1>联系我们</h1>
+		   
+		   <image class ="img-responsive center-block"src = "img/other/map.png">
+		   </image>
+		  
+	   </div>
+	   <div class = "container container2">
+	       <div class = "col-lg-6">
+		       <image src = "img/other/tel.png" class ="img-responsive center-block"></image>
+			   <p>010-57018206</p>
+		   </div>
+		   <div class = "col-lg-6">
+		       <image src = "img/other/email.png" class ="img-responsive center-block"></image>
+			   <p>HEQINLIANCHUANG@.COM</p>
+		   </div>
+	   </div>
+	   <div class = "container">
+	       <div class = "col-lg-4 col-lg-offset-4">
+		       <input placeholder="姓名">
+		   </div>
+		    <div class = "col-lg-4 col-lg-offset-4">
+		       <input placeholder="邮箱">
+		   </div>
+		    <div class = "col-lg-4 col-lg-offset-4">
+		       <input placeholder="电话">
+		   </div>
+		    <div class = "col-lg-4 col-lg-offset-4">
+		       <input placeholder="信息备注">
+		   </div>
+		    <div class = "col-lg-4 col-lg-offset-4">
+		       <button style = "height:4rem;"class ="btn btn-primary">提交信息</button>
+		   </div>
+	   </div>
+	   
+	   
+	 <div class = "fifth container-fluid">
+		    <p style = "padding-top:3rem;">版权所有: 北京和勤联创技术有限公司</p>
+		    <p>备案号：京ICP备16011090号</p>
+	 </div>
+	<script>
+		 $('#btn-more').addClass('btn1');
+    $(".back").on('touchstart',function(e){
+	    $('.back').addClass('backHover');
+	});
+	$(".back").on('touchend',function(e){
+	    $('.back').removeClass('backHover');
+		 $('.nav-two').slideToggle(500);
+		   $('nav').slideToggle(500);
+	});
+	function navTap(){
+    if(show){
+	    $('nav').slideToggle(500);
+	}
+	else{
+	    $('nav').slideToggle(500);
+	}
+    $('.nav-two').slideToggle(500);
+	!show;
+	console.log('show');
+}
+
+
+	function tap(index){
+	    
+		if(index ==1){
+		    if($('.e1').hasClass('active')){
+			   
+			}
+			else{
+			     $('.e1').addClass('active');
+			     $('.e2').removeClass('active');
+		         $('.e3').removeClass('active');
+				 $('.first').css("display","block");
+				 $('.second').css("display","none");
+				 $('.third').css("display","none");
+				 
+			} 
+		}
+		else if(index ==2){
+		    if($('.e2').hasClass('active')){
+			   
+			}
+			else{
+			     $('.e2').addClass('active');
+			     $('.e1').removeClass('active');
+			     $('.e3').removeClass('active');
+				 $('.first').css("display","none");
+				 $('.second').css("display","block");
+				 $('.third').css("display","none");
+			}
+		}else{
+		    if($('.e3').hasClass('active')){
+			   
+			}
+			else{
+			     $('.e3').addClass('active');
+			     $('.e1').removeClass('active');
+			     $('.e2').removeClass('active');
+				 $('.first').css("display","none");
+				 $('.second').css("display","none");
+				 $('.third').css("display","block");
+			}
+		}
+		
+		
+	}
+	
+	$(" .list-group1 ").on('click','.list-group-item',function(e){
+	    var index = $(this).index();
+		var con = index-1;
+		for (var i=0;i<7;i++){
+		    if(i == index){
+			    $('.list-group1 .list-group-item').eq(i).addClass('active');
+			}
+			else{
+			    $('.list-group1 .list-group-item').eq(i).removeClass('active');
+			    $('.list-group2 .list-group-item').removeClass('active');
+			    $('.list-group3 .list-group-item').removeClass('active');
+			}
+		}
+		$('.rightside').hide();
+		if(index == 1){
+		    $('.rightside1').show();
+		}
+		else if(index ==3){
+		    $('.rightside3').show();
+		}
+		else if(index ==2){
+		    $('.rightside2').show();
+		}
+		else if(index ==5){
+		    $('.rightside5').show();
+		}
+		else{
+		}
+	});
+	$(" .list-group3 ").on('click','.list-group-item',function(e){
+	    var index = $(this).index();
+		var con = index-1;
+		for (var i=0;i<4;i++){
+		    if(i == index){
+			    $('.list-group3 .list-group-item').eq(i).addClass('active');
+			}
+			else{
+			    $('.list-group3 .list-group-item').eq(i).removeClass('active');
+				 $('.list-group1 .list-group-item').removeClass('active');
+			    $('.list-group2 .list-group-item').removeClass('active');
+			}
+		}
+		if(index == 1){
+		    $('.rightside').hide();
+		    $('.rightside31').show();
+		  
+			
+		}
+		else if(index ==3){
+		console.log('2');
+		$('.rightside').hide();
+		    $('.rightside31').show();
+		    
+		}else{
+		}
+	});
+	
+	$(" .list-group2 ").on('click','.list-group-item',function(e){
+	    var index = $(this).index();
+		var con = index-1;
+		for (var i=0;i<7;i++){
+		    if(i == index){
+			    $('.list-group2 .list-group-item').eq(i).addClass('active');
+			}
+			else{
+			    $('.list-group2 .list-group-item').eq(i).removeClass('active');
+				 $('.list-group3 .list-group-item').removeClass('active');
+			    $('.list-group1 .list-group-item').removeClass('active');
+			}
+		}
+		
+	});
+	function navTap(){
+	    $('.nav-two').slideToggle(500)
+	}
+	 $(document).scroll(function() {
+        $('.nav-two').slideUp(500);
+ 
+    });
+	</script>
+  </body>
+</html> 
