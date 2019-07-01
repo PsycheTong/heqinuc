@@ -624,6 +624,43 @@ font-size:1.4rem;
     top: 0px;
     left: 31%;
 }
+.in{
+	 -webkit-animation:in 0.5s ease-in 1;
+	 animation:in 0.5s ease-in  1;
+      animation-fill-mode:forwards;
+}
+.out{
+	-webkit-animation:out 2s 1;
+	 animation:out 2s 1;
+      animation-fill-mode:forwards;
+}
+@keyframes in{
+	0%{
+		width:38%;
+		top: 0px;
+		left: 31%;
+	}
+	100%{
+		width:42%;
+		top: -10px;
+		left: 29%;
+	}
+	
+}
+@keyframes out{
+	0%{
+		width:42%;
+		top: -10px;
+		left: 29%;
+	}
+	100%{
+		width:38%;
+		top: 0px;
+		left: 31%;
+	}
+	
+	
+}
 .second .container .box-flex2{
 	padding:0;
 }
