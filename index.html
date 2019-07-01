@@ -384,6 +384,31 @@ $(document).ready(function(){
     $(".back").on('touchstart',function(e){
 	    $('.back').addClass('backHover');
 	});
+	$(".android").eq(0).mouseenter(function(){
+	    var index = $(this).index();
+		
+	   $('.android').eq(index).addClass('in');
+	   $('.android').eq(index).removeClass('out');
+	})
+	$(".android").eq(0).mouseout(function(){
+       var index = $(this).index();
+			  
+	   $('.android').eq(index).addClass('out');
+	   $('.android').eq(index).removeClass('in');
+	})
+	$(".android").eq(1).mouseenter(function(){
+	    var index = $(this).index()+1;
+		
+	   $('.android').eq(index).addClass('in');
+	   $('.android').eq(index).removeClass('out');
+	})
+	$(".android").eq(1).mouseout(function(){
+       var index = $(this).index()+1;
+			  
+	   $('.android').eq(index).addClass('out');
+	   $('.android').eq(index).removeClass('in');
+	})
+
 	$(".back").on('touchend',function(e){
 	    $('.back').removeClass('backHover');
 		$('.nav-two').slideToggle(500);
@@ -398,7 +423,7 @@ $(document).ready(function(){
 	$(".forf1.link-more,.forf2.link-more,.forf3.link-more").on('click',function(){
 	   window.location.href="example.html";
 	});
-	$("#second-list .list-felx2 .list-item").on("click",function(){
+	$("#second-list .list-felx2 .list-item,.android").on("click",function(){
 	     window.location.href="platform.html";
 	})
 	$("#second-list2 .list-felx2 li.list-item").on("click",function(){
