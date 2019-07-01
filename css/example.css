@@ -195,15 +195,17 @@ li,a:active {background-color:transparent;}
 .first .row>h1{
 	font-size:2.5rem;
 	font-weight:600;
+		color:#7b7b7b;
 }
 .second .row>h1{
 	font-size:2.5rem;
+		color:#7b7b7b;
 	font-weight:600;
 }
 .third .row>h1{
 	font-size:2.5rem;
 	font-weight:600;
-	
+		color:#7b7b7b;
 }
 .first .row>ol>li{
 	font-size:1.8rem;
@@ -232,12 +234,14 @@ li,a:active {background-color:transparent;}
 	line-height:3rem;
 	padding:0;
 	margin:0;
+		color:#7b7b7b;
 }
 .second .ex .ex-left>h1{
 	font-size:2rem;
 	font-weight:600;
 	line-height:3rem;
 	padding:0;
+		color:#7b7b7b;
 	margin:0;
 }
 .third .ex .ex-left>h1{
@@ -246,20 +250,21 @@ li,a:active {background-color:transparent;}
 	line-height:3rem;
 	padding:0;
 	margin:0;
+		color:#7b7b7b;
 }
 .first .ex .ex-left>h1>span{
 	font-size:4rem;
 	font-weight:600;
 	padding-right:0.5rem;
 	margin-top:-0.9rem;
-	
+		color:#7b7b7b;
 }
 .second .ex .ex-left>h1>span{
 	font-size:4rem;
 	font-weight:600;
 	padding-right:0.5rem;
 	margin-top:-0.9rem;
-	
+		color:#7b7b7b;
 }
 .second .ex2 .container>h1{
 	
@@ -268,24 +273,27 @@ font-size:2rem;
     line-height: 3rem;
     padding: 0;
     margin: 0;
+		color:#7b7b7b;
 }
 .second .ex2 .container>p{
 font-size: 1.8rem;
     line-height: 2.7rem;
     margin: 0;
     padding: 0;
+	color:#7f7f7f;
 }
 .third .ex .ex-left>h1>span{
 	font-size:4rem;
 	font-weight:600;
 	padding-right:0.5rem;
 	margin-top:-0.9rem;
-	
+		color:#7b7b7b;
 }
 .first .ex .ex-left>p{
 	font-size:1.8rem;
 	line-height:2.7rem;
 	margin:0;
+color:#7f7f7f;
 	padding:0;
 }
 .second .ex .ex-left>p{
@@ -293,6 +301,7 @@ font-size: 1.8rem;
 	line-height:2.7rem;
 	margin:0;
 	padding:0;
+	color:#7f7f7f;
 }
 .third .ex .ex-left>ul>li{
 	font-size:1.8rem;
@@ -310,6 +319,7 @@ font-size: 1.8rem;
 	line-height:3rem;
 	padding:0;
 	margin:0;
+		color:#7b7b7b;
 }
 .third .row .col-lg-7>h1{
 	font-size:2rem;
@@ -317,11 +327,13 @@ font-size: 1.8rem;
 	line-height:3rem;
 	padding:0;
 	margin:0;
+		color:#7b7b7b;
 }
 .first .col-lg-7>p{
 	font-size:1.8rem;
 	line-height:2.2rem;
 	margin:0;
+	color:#7f7f7f;
 	padding:0;
 	    line-height: 2.7rem;
 }
@@ -330,7 +342,8 @@ font-size: 1.8rem;
 	line-height:2.2rem;
 	margin:0;
 	padding:0;
-	    line-height: 2.7rem;
+	color:#7f7f7f;
+	line-height: 2.7rem;
 }
 
 .third .col-lg-7>p{
@@ -338,7 +351,8 @@ font-size: 1.8rem;
 	line-height:2.2rem;
 	margin:0;
 	padding:0;
-	    line-height: 2.7rem;
+	line-height: 2.7rem;
+    color:#7f7f7f;
 }
 .second .ex .col-lg-5>img{
 	margin-top:2rem;
@@ -352,6 +366,7 @@ font-size: 1.8rem;
 	line-height:3rem;
 	padding:0;
 	margin:0;
+		color:#7b7b7b;
 }
 .third .col-lg-7>h1{
 	font-size:2rem;
@@ -359,6 +374,7 @@ font-size: 1.8rem;
 	line-height:5rem;
 	padding:0;
 	margin:0;
+		color:#7b7b7b;
 }
 
 .first .col-lg-6>h1{
@@ -366,14 +382,16 @@ font-size: 1.8rem;
 	font-weight:600;
 	line-height:3rem;
 	padding:0;
+		color:#7b7b7b;
 	margin:0;
 }
 .first .col-lg-6>p{
 	font-size:1.8rem;
 	line-height:2.2rem;
 	margin:0;
+	color:#7f7f7f;
 	padding:0;
-	    line-height: 2.7rem;
+	line-height: 2.7rem;
 }
 .first .col-lg-8>h1{
 	font-size:2rem;
@@ -381,13 +399,15 @@ font-size: 1.8rem;
 	line-height:3rem;
 	padding:0;
 	margin:0;
+	color:#7b7b7b;
 }
 .first .col-lg-8>p{
 	font-size:1.8rem;
 	line-height:2.2rem;
 	margin:0;
 	padding:0;
-	    line-height: 2.7rem;
+	color:#7f7f7f;
+	line-height: 2.7rem;
 }
 .fifth
 {

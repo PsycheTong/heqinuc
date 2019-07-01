@@ -391,7 +391,7 @@ font-size:1.4rem;
 	text-align:center;
 	font-size:1.8rem;
 	padding-top:196px;
-	padding-bottom:1rem;
+	padding-bottom:0rem;
 	line-height:5rem;
 	    border-bottom: dotted 1px #e3e3e3;
 }
@@ -427,6 +427,7 @@ font-size:1.4rem;
 	height:340px;
 	float:left;
 	margin-right:2%;
+	opacity:0;
 }
 .first .row{
 	margin-top:4rem;
@@ -481,9 +482,10 @@ font-size:1.4rem;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
-    margin-top: -20px;
+    margin-top: -18px;
     margin-bottom: 2rem;
 }
+
 #second-list{
 	 height:28rem;
 	  cursor:pointer;
@@ -503,10 +505,10 @@ font-size:1.4rem;
 #second-list .desktop{
 	display:block;
 	overflow:hidden;
-	height:5rem;
+	height:3.5rem;
 	width:100%;
 	margin-left:0px;
-	margin-top:100px;
+	margin-top:132px;
 	text-align:center;
 	font-size:2.5rem;
 	color:#474a4e;
@@ -616,14 +618,11 @@ font-size:1.4rem;
 	height:36rem;
 }
 .android{
-	    border: solid 1px #010d1c;
-    background: #b0aaaa;
-    width: 18%;
+	width: 38%;
     padding: 21px;
-    border-radius: 20px;
     position: absolute;
-    top: -30px;
-    left: 41%;
+    top: 0px;
+    left: 31%;
 }
 .second .container .box-flex2{
 	padding:0;
@@ -726,11 +725,20 @@ font-size:1.4rem;
     padding-bottom:0;
 	margin-bottom:0;
 }
+.fifth p>a:visited{
+	display:block;
+	text-align:left;
+	color:#337ab7;
+	
+    font-size:1.4rem;
+    padding-bottom:0;
+	margin-bottom:0;
+}
 .fifth p>span{
 	display:block;
-	width:2rem;
-	margin-top:0.2rem;
-	height:2rem;
+	width:1.8rem;
+	margin-top:0.3rem;
+	height:1.8rem;
 	float:left;
 	margin-right:1rem;
 	background-position:center center;
@@ -820,6 +828,8 @@ font-size:1.4rem;
 	animation-direction:alternate;
 	 -webkit-transform-style:preserve-3d;
 	 transform-style:preserve-3d;
+	     animation-fill-mode:forwards;
+	      -webkit-animation-fill-mode:forwards;  
 }
 .x2{
 	
@@ -937,18 +947,34 @@ font-size:1.4rem;
 }
 .desks1{
 	 opacity:0;
-	 -webkit-animation:desks1 2s 1 0.5s;
-	 animation:desks1 2s 1 0.5s;
+	 -webkit-animation:s1 2s 1 0s;
+	 animation:s1 2s 1 0s;
      animation-fill-mode:forwards;
 	
 }
 .dec{
 	opacity:1;
-	 -webkit-animation:dec 0.5s 1 2s;
-	 animation:dec 0.5s 1 2s;
+	 -webkit-animation:dec 1s 1 2s;
+	 animation:dec 1s 1 2s;
      animation-fill-mode:forwards;
 	
 }
+.font{
+	 -webkit-animation:font 2s 1;
+	 animation:font 2s 1;
+      animation-fill-mode:forwards;
+}
+@keyframes font{
+	0%{
+		opacity:0;
+	
+	}
+	100%{
+		opacity:1;
+
+	}
+}
+
 @keyframes desks1{
 	from{
 		opacity:0;
