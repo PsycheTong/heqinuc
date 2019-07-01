@@ -74,10 +74,9 @@
 	  <!--头图部分—-->
         <div id = "t" class = "visible-xs row my-head1 ">
 		    <div class = "container">
-			  <!-- <h1 class = " t1 hidden-xs">和勤联创技术有限公司</h1> -->
-			  <h1 class = "t2 visible-xs">和勤联创技术有限公司</h1>
-			  <div class = " t3 hidden-xs btn-more">了解更多</div>
-			  <div class = " t4 visible-xs btn-more">了解更多</div>
+			  <image class = "t1"src = "img/new/h1.png"></image>
+			
+			  <div class = " t4  btn-more">了解更多</div>
 			  
 			</div>
 
@@ -85,7 +84,7 @@
       </div>
      <div id = "pc1"class = " first container">
 	       <h1>核心技术</h1>
-		   <span class = "line"></span>
+		   <span class = "visible-lg line"></span>
 		   <p class ="ftitle-fle2">具有国内领先的LBS位置服务、大数据挖掘以及三维建模的技术方案，能够在全方位、多角度、多领域</p>
 		   <p class ="ftitle-fle2">为客户提供最专业、高品质的地理位置及空间数字化信息产品和服务。</p>
 		   <div class = "row justify-content-center align-items-center">
@@ -113,9 +112,9 @@
 		     </div>   
 	     </div>
 	 </div>
-	 <div style = "background-color:transparent"id = "pc2" class="second container">
+	 <div style = "background-color:#f2f2f2"id = "pc2" class="second container">
 	     <h1 id ="text2" >我们可以为您提供</h1>
-		 <span class = "line"></span>
+		 <span class = "visible-lg line"></span>
 			<p class ="ftitle-fle2">面向互联网开发者提供地图导航的开放SDK</p>
 			<p class ="ftitle-fle2">覆盖Android、IOS、WEB主流平台，提供SDK插件、开发者指南、开发在线手册等帮助文档</p>
 		   <div style = "margin-top:4rem" class = "container ">
@@ -146,7 +145,7 @@
 					    <li style = "color:#ece7e7;"class = "desktops">导航Java Doc</li>
 					</ul>
 				</li>
-			    <li id = "second-list2" class = "v1 visible-xs col-lg-offset-1  col-sm-10 col-sm-offset-1 col-lg-5 col-sm-12  card-item" style = "background-image:url('img/other/i2.png');background-size :100% 100%;">
+			    <li id = "second-list2" class = "v1 visible-xs col-lg-offset-1  col-sm-10 col-sm-offset-1 col-lg-5 col-sm-12  card-item" style = "background-image:url('img/other/i1.png');background-size :100% 100%;">
 				    
 					
 					<ul class = "list-felx2">
@@ -161,7 +160,7 @@
 					    <li class = "fors1 list-item">iOS 导航Doc</li>
 					</ul>
 				</li>
-				<li  id = "second-list2" class = "v2 visible-xs col-lg-offset-0  col-sm-10 col-sm-offset-1 col-lg-5 col-sm-12 card-item" style = "background-image:url('img/other/i1.png');background-size :100% 100%;">
+				<li  id = "second-list2" class = "v2 visible-xs col-lg-offset-0  col-sm-10 col-sm-offset-1 col-lg-5 col-sm-12 card-item" style = "background-image:url('img/other/i2.png');background-size :100% 100%;">
 				   
 					
 					<ul class = "list-felx2">
@@ -263,9 +262,28 @@
 		 </div>
 	 </div>
 	 </div>
-	 <div id = "pc4" class = "fifth container-fluid">
-		    <p style = "padding-top:3rem;">版权所有: 北京和勤联创技术有限公司</p>
-		    <p>备案号：京ICP备16011090号</p>
+	 <div id = "pc4" class = "fifth">
+	     <div style = "background-color:#242F3B;"class = "container">
+		     <image style="padding-top:5rem;" src = "img/home/logo-heqin.png" class = "col-lg-2 col-xs-5 img-responsive center-block brand"></image>
+			 <div style="background-color:#242F3B;padding-top:2rem;height:18rem;"class = "col-xs-12 col-lg-offset-1  col-lg-6">
+			     <h3>北京和勤联创技术有限公司</h3>
+				 <p><span style = "background-image:url('img/new/location.png');"></span>地址北京市朝阳区望京东园512号融科望京中心B座1202室</p>
+				 <p><span style = "background-image:url('img/new/tel.png');"></span>010-57018206</p>
+				 <p><span style = "background-image:url('img/new/email.png');"></span>HEQINLIANCHUANG@.COM</p>
+			 </div>
+			 <div style="background-color:#242F3B;padding-top:2rem;height:18rem;"  class = "col-xs-12 col-lg-3">
+			     <h3>简介</h3>
+				 <p><a href="example.html">核心技术与案例</a></p>
+				 <p><a href="platform.html">开放平台      </a></p>
+				 <p><a href="about_us.html">关于我们      </a></p>
+				 <p><a href="contact_us.html">联系我们      </a></p>
+			 </div>
+			 
+		 </div>
+		  <p style ="text-align:center; line-height:3rem;   margin-top: 3rem;
+    color: #acacac;">京ICP备16011090号</p>
+		   <!--  <p style = "padding-top:3rem;">版权所有: 北京和勤联创技术有限公司</p>
+		    <p>备案号：京ICP备16011090号</p> -->
 	 </div>
 	 <div id = "loading">
 	 <div class = "blur"></div>
@@ -450,6 +468,9 @@ $(document).ready(function(){
 	      window.location.href="example.html";
 	})
 	$(".t3").on("click",function(){
+	    ScrollToControl('pc1');
+	})
+	$(".t4").on("click",function(){
 	    ScrollToControl('pc1');
 	})
 	$("#btn-more").on('click',function(){
