@@ -212,18 +212,21 @@ li,a:active {background-color:transparent;}
 	line-height:2.2rem;
 	margin:0;
 	padding:0;
+	    line-height: 2.7rem;
 }
 .second .row>ol>li{
 	font-size:1.8rem;
 	line-height:2.2rem;
 	margin:0;
 	padding:0;
+	    line-height: 2.7rem;
 }
 .third .row>ol>li{
 	font-size:1.8rem;
 	line-height:2.2rem;
 	margin:0;
 	padding:0;
+	    line-height: 2.7rem;
 }
 .first .ex .ex-left>h1{
 	font-size:2rem;
@@ -270,7 +273,7 @@ font-size:2rem;
 }
 .second .ex2 .container>p{
 font-size: 1.8rem;
-    line-height: 2.2rem;
+    line-height: 2.7rem;
     margin: 0;
     padding: 0;
 }
@@ -283,13 +286,13 @@ font-size: 1.8rem;
 }
 .first .ex .ex-left>p{
 	font-size:1.8rem;
-	line-height:2.2rem;
+	line-height:2.7rem;
 	margin:0;
 	padding:0;
 }
 .second .ex .ex-left>p{
 	font-size:1.8rem;
-	line-height:2.2rem;
+	line-height:2.7rem;
 	margin:0;
 	padding:0;
 }
@@ -298,6 +301,7 @@ font-size: 1.8rem;
 	line-height:2.2rem;
 	margin:0;
 	padding:0;
+	    line-height: 2.7rem;
 }
 .first .ex .col-lg-4>img{
 	margin-top:6rem;
@@ -321,12 +325,14 @@ font-size: 1.8rem;
 	line-height:2.2rem;
 	margin:0;
 	padding:0;
+	    line-height: 2.7rem;
 }
 .second .col-lg-7>p{
 	font-size:1.8rem;
 	line-height:2.2rem;
 	margin:0;
 	padding:0;
+	    line-height: 2.7rem;
 }
 
 .third .col-lg-7>p{
@@ -334,6 +340,7 @@ font-size: 1.8rem;
 	line-height:2.2rem;
 	margin:0;
 	padding:0;
+	    line-height: 2.7rem;
 }
 .second .ex .col-lg-5>img{
 	margin-top:2rem;
@@ -368,6 +375,7 @@ font-size: 1.8rem;
 	line-height:2.2rem;
 	margin:0;
 	padding:0;
+	    line-height: 2.7rem;
 }
 .first .col-lg-8>h1{
 	font-size:2rem;
@@ -381,6 +389,7 @@ font-size: 1.8rem;
 	line-height:2.2rem;
 	margin:0;
 	padding:0;
+	    line-height: 2.7rem;
 }
 .fifth
 {
