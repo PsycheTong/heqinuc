@@ -31,7 +31,7 @@
 }
 .navbar .nav li >a{
 	color:#999;
-	font-size:2rem;
+	font-size:1.6rem;
 } 
 .navbar .nav li >a.active{
 	color:#fff;
@@ -145,6 +145,7 @@ li,a:active {background-color:transparent;}
 	background-size:100%;
 	background-repeat:no-repeat;
 	background-position:center center;
+	background-color:#242F3B;
 	height:100%;
 	width:100%;
 	margin:0;
@@ -197,7 +198,7 @@ li,a:active {background-color:transparent;}
 	background-image:url('../img/new/1.gif');
 	background-size:100% 110%;
 	background-repeat:no-repeat;
-	
+	background-color:#242F3B;
 	height:100%;
 	width:100%;
 	margin:0;
@@ -684,7 +685,6 @@ font-size:1.4rem;
 .third .box-flex3 .card-item{
 	display:block;
     cursor:pointer;
-	height:42rem;
 	    border: solid 0px #999;
     box-shadow: 5px 5px 50px #eeeeee;
 }
@@ -790,13 +790,13 @@ font-size:1.4rem;
 }
 #positon{
 	width:100%;
-	height:100vh;
+	
 	overflow:hidden;
 	
 }
 #text4{
 	width:300%;
-	height:85%;
+	padding-bottom:20px;
 	overflow:hidden;
 	margin-top:5%;
     animation:box4 10s infinite;
@@ -907,10 +907,9 @@ font-size:1.4rem;
 	color:#999;
 }
 .box4{
-	height:70vh;
 	width:30%;
 	float:left;
-	
+	    margin-bottom: 40px;
     margin-left:1.66%;
     margin-right:1.66%;
     border: solid 1px #eeeeee;
@@ -940,46 +939,46 @@ font-size:1.4rem;
 }
 .s1{
 	 opacity:0;
-	 -webkit-animation:s1 1.5s 1 ;
-	 animation:s1 1.5s 1 ;
+	 -webkit-animation:s1 0.55s 1 0.2s ;
+	 animation:s1 0.5s 1 0.2s ;
      animation-fill-mode:forwards;
 	 animation-timing-function: ease-out;
 	 -webkit-animation-timing-function: ease-in-out;
 }
 .s2{
 	 opacity:0;
-	 -webkit-animation:s1 0.5s 1 2s;
-	 animation:s1 0.5s 1 2s;
+	 -webkit-animation:s1 0.5s 0.8s;
+	 animation:s1 0.5s 0.4s;
      animation-fill-mode:forwards;
 }
 .s3{
 	 opacity:0;
-	 -webkit-animation:s1 0.5s 1 2.2s;
-	 animation:s1 0.5s 1 2.2s;
+	 -webkit-animation:s1 0.5s 1 0.6s;
+	 animation:s1 0.5s 1 0.6s;
      animation-fill-mode:forwards;
 }
 .s4{
 	 opacity:0;
-	 -webkit-animation:s1 0.5s 1 2.4s;
-	 animation:s1 0.5s 1 2.4s;
+	 -webkit-animation:s1 0.5s 1 0.8s;
+	 animation:s1 0.5s 1 0.8s;
      animation-fill-mode:forwards;
 }
 .s5{
 	 opacity:0;
-	 -webkit-animation:s1 0.5s 1 2.6s;
-	 animation:s1 0.5s 1 2.6s;
+	 -webkit-animation:s1 0.5s 1 1.0s;
+	 animation:s1 0.5s 1 1.0s;
      animation-fill-mode:forwards;
 }
 .s6{
 	 opacity:0;
-	 -webkit-animation:s1 0.5s 1 2.8s;
-	 animation:s1 0.5s 1 2.8s;
+	 -webkit-animation:s1 0.5s 1 1.2s;
+	 animation:s1 0.5s 1 1.2s;
      animation-fill-mode:forwards;
 }
 .s7{
 	 opacity:0;
-	 -webkit-animation:s1 0.5s 1 3s;
-	 animation:s1 0.5s 1 3s;
+	 -webkit-animation:s1 0.5s 1 1.4s;
+	 animation:s1 0.5s 1 1.4s;
      animation-fill-mode:forwards;
 }
 .desks1{
