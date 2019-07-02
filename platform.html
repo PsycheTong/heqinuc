@@ -99,10 +99,10 @@
 				  <button class = "list-group-item large ">WEB平台     </button>              
 				  <a href = "#a"> <button class = "list-group-item ">地图API           </button>              </a>
 				  <a href = "#a"> <button class = "list-group-item">地图开发者指南     </button>              </a>
-				  <a id ="a"> <button  class = "list-group-item">地图参考手册       </button>     </a>
+				  <a> <button  class = "list-group-item">地图参考手册       </button>     </a>
 							 																				
 				</div>
-			   
+			   <p id ="a" class = "visible-xs hidden-lg"></p>
 			</div>
 			<!--安卓部分-->
 	      <div  class="rightside rightside1 col-md-9 col-xs-12 col-sm-12 col-lg-9">
@@ -436,6 +436,48 @@
 				  </div> 
 				    
 			</div>  
+			
+			 <div style = "display:none;" class="rightside rightside32 col-md-9 col-xs-12 col-sm-12 col-lg-9">
+	           <nav class = "visible-lg">
+			      <ul class = "breadcrumb">
+			          <li class = "breadcrumb-item"><a  href = "#">开放平台</a>                  </li>
+			          <li class = "breadcrumb-item"><a  href = "#">WEB平台</a>                  </li>
+			          <li class = "breadcrumb-item active"><a  href = "#">地图开发者指南</a>           </li>
+			      </ul>
+			  </nav>
+			
+			      <h1 class = "download-h1">地图开发者指南</h1>
+				   <div class = "row download-row visible-lg">
+				     
+				     <div class = "col-lg-8">
+					   <p>  Web-mapguide  概述：</p>
+				       <p>(文件大小1.80MB)</p>
+				    </div>
+					<button class = "btn  btn-primary btn-lg btn-download">点击下载</button>
+				  </div>
+				   <p>点击下载按钮即可获取地图开发者指南</p> 
+			</div>  
+			
+			 <div style = "display:none;" class="rightside rightside33 col-md-9 col-xs-12 col-sm-12 col-lg-9">
+	           <nav class = "visible-lg">
+			      <ul class = "breadcrumb">
+			          <li class = "breadcrumb-item"><a  href = "#">开放平台</a>                  </li>
+			          <li class = "breadcrumb-item"><a  href = "#">WEB平台</a>                  </li>
+			          <li class = "breadcrumb-item active"><a  href = "#">地图参考手册</a>           </li>
+			      </ul>
+			  </nav>
+			
+			      <h1 class = "download-h1">地图参考手册</h1>
+				     <div class = "row download-row visible-lg">
+				     
+				     <div class = "col-lg-8">
+					   <p>web-mapreference  概述：</p>
+				       <p>(文件大小1.80MB)</p>
+				    </div>
+					<button class = "btn  btn-primary btn-lg btn-download">点击下载</button>
+				  </div>
+				  <p>点击下载按钮即可获取地图参考手册</p>
+			</div>  
 		
 		</div>
 	    
@@ -447,7 +489,7 @@
 			
 	<script>
 	$('#btn-more').addClass('btn1');
-    $(".back").on('touchstart',function(e){
+	$(".back").on('touchstart',function(e){
 	    $('.back').addClass('backHover');
 	});
 	$(".back").on('touchend',function(e){
@@ -532,18 +574,19 @@
 			    $('.list-group3 a').eq(i).children(' .list-group-item').removeClass('active');
 			    }
 		}
+	
+		$('.rightside').hide();
 		if(index == 1){
-		    $('.rightside').hide();
 		    $('.rightside31').show();
-		  
 			
 		}
 		else if(index ==3){
-		    console.log('2');
-		    $('.rightside').hide();
-		    $('.rightside31').show();
-		    
-		}else{
+		    $('.rightside33').show();
+		}
+		else if(index ==2){
+		    $('.rightside32').show();
+		}
+		else{
 		}
 	});
 	
