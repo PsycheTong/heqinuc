@@ -1,4 +1,3 @@
-
 .navbar {
 	
 	font-size:2.2rem;
@@ -7,7 +6,7 @@
 	background-color:rgba(0,0,0,0.7);
 	
 }
- body,html{
+body,html{
 	width:100%;
     height:100%;	
 	color:#666;
@@ -162,14 +161,14 @@ li,a:active {background-color:transparent;}
 	margin-bottom:40px;
 }
 .side-bar .list-group-item{
-	height:3rem;
+	height:3.4rem;
 	border:0;
 	border-radius:3px;
-    font-size:1.8rem;
-	line-height:3rem;
+    font-size:1.6rem;
+	line-height:3.4rem;
 	padding-top:0;
 	padding-bottom:0;
-    
+    padding-left:3.5rem;
     color:#a3a5a6;
 }
 a:hover{
@@ -183,11 +182,12 @@ a:hover{
 
 }
 .side-bar .list-group-item.large{
-    height:4rem;
+    height:6rem;
 	font-size:2.2rem;
-	line-height:4rem;
+	line-height:6rem;
 	padding-top:0;
 	padding-bottom:0;
+	padding-left:0rem;
     font-weight:600;
 	border:0;
 	border-radius:3px;
@@ -198,8 +198,8 @@ a:hover{
 	background-color:#f4f4f4;
 }
 .side-bar .list-group-item.active{
-	color:#fff;
-	background-color:#337ab7;
+	color:#337ab7;
+	background-color:transparent;
 }
 .breadcrumb .breadcrumb-item>a{
 	
@@ -210,18 +210,46 @@ a:hover{
 	border:0;
 }
 .breadcrumb {
+	padding-left:0;
+	
 	background-color:transparent;
-	border-radius:0;
-	border-bottom:solid 1px #c3c3c3;
+	
 }
 .btn-download{
 	float:right;
-	margin-top:15px;
+	    width: 120px;
+    height: 4rem;
+    margin-top: 0.8rem;
 }
 .container p{
 	font-size:1.8rem;
-	line-height:2.4rem;
+	line-height:3rem;
 	color:#666;
+	margin-bottom:0;
+}
+.androidmap{
+	margin-top:1rem;
+	font-size:1.8rem;
+	line-height:3rem;
+}
+button:focus{
+	border:0;
+	outline:0;
+}
+h3{
+	text-align:center;
+	font-size:1.4rem;
+	color:#999;
+	margin-bottom1:rem;
+}
+.container h2{
+	margin-top:30px;
+	font-size:2.4rem;
+	line-height:4rem;
+	color:#337ab7;
+	margin-bottom:30px;
+	    font-weight: 500;
+    border-bottom: dotted 1px #c6c6c6;
 }
 .download-h1{
 	font-size:3rem;
@@ -229,9 +257,102 @@ a:hover{
 	padding-bottom:20px;
 }
 .download-row{
+	width:100%;
+	background-color: #f4f4f4 !important;
+	border-radius:3px;
+    padding-left: 2rem;
+    padding-right: 2rem;
      padding-top:20px;
-	 padding-bottom:30px;
+	 padding-bottom:20px;
 }   
+.download-row .col-lg-8>p:first-child{
+	font-size:2.4rem;
+}
+.download-row .col-lg-8>p{
+	font-size:1.4rem;
+	line-height:2.8rem;
+}
+.web1{
+	font-size:1.8rem;
+	line-height:3rem;
+	text-decoration:none;
+}
+.web1>li{
+	line-height:3.4rem;
+	font-weight:550;
+	display:block;
+}
+.web1>li>p{
+	text-indent: 0em;
+	line-height:4.6rem;
+	float:left;
+}
+.web1>li>p>span{
+	display: block;
+    float: left;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 2.05rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+.web1>p{
+	display:inline-block;
+	text-indent: 2em;
+    padding:0;	
+}
+.code{
+    display: block;
+    background: none repeat scroll 0 0;
+    background-color: #555555;
+    border-radius:4px 4px 4px 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px inset;
+    clear: both;
+    font-family: 'Consolas', 'Courier', 'Monaco', monospace;
+    color: #fff;
+    /*background-color: #f8f8f8;*/
+    margin: 5px 0px;
+    overflow: auto;
+    padding: 10px;
+    white-space: pre;
+    /*text-indent: 1em;*/
+}
+.highlight {
+    padding: 2rem;
+    margin-bottom: 14px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 4px;
+	margin-top:3rem;
+	margin-bottom:5rem;
+}
+.highlight pre {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    word-break: normal;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.highlight pre code {
+   font-size:1.6rem;
+    color: #333;
+}
+.c {
+    color: #999;
+}
+.nt {
+    color: #2f6f9f;
+}
+.na {
+    color: #4f9fcf;
+}
+.s {
+    color: #d44950;
+}
 .guide-pic{
 	width:100%;
 }
@@ -239,8 +360,36 @@ a:hover{
 	
 }
 .webAPI{
-	padding:20px;
+	padding:0px;
+	    padding: 0px;
+    box-shadow: 10px 10px 30px 10px #d4d4d4;
+    margin-top: 4rem;
+	border:solid 20px #0a0b0c;
+	border-radius:10px;
+}
+.j-cover-overflow {
+	margin-top:3rem;
+	margin-bottom:5rem;
+    font-size:1.8rem;
+	line-height:3rem;
+	color: #333333;
+}
+.outline__new-outline__chapter__number.f-fl{
+	display:block;
+	text-align:center;
+	font-size:1.8rem;
+	width:4rem;
+	height:3rem;
+	float:left;
+}
+.outline__new-outline__chapter__content__plan__lessons__lesson{
+	font-size:1.4rem;
 	
+	text-indent: 4rem;
+	
+}
+.outline__new-outline {
+    
 }
 .fifth
 {
