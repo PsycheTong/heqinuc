@@ -359,12 +359,18 @@ h3{
 .roe-pic{
 	
 }
-.webAPI{
+.webAPI1{
 	padding:0px;
 	    padding: 0px;
     box-shadow: 10px 10px 30px 10px #d4d4d4;
-    margin-top: 1rem;
-	border:solid 10px #0a0b0c;
+    margin: 1rem;
+	
+	border-radius:5px;
+}
+.webAPI{
+	padding:0px;
+	    padding: 0px;
+   
 	border-radius:5px;
 }
 .j-cover-overflow {
