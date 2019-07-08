@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+  <head>
+    <meta charset = "utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+	 <title>和勤联创技术有限公司</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style_about_us.css" rel="stylesheet">
+    <!-- <link href = "css/bootstrap.min.css" rel = "stylesheet"> -->
+	<!--script src ="js/jquery.js"></script>
+	<script src ="js/bootstrap.min.js"></script>
+	 --> <script src="js/jquery.js"></script>
+	 <script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+    <style type = "text/css">
+	    body,html{
+		    font-family: Microsoft YaHei,simsun,Tahoma,Arial,"Hiragino Sans GB",sans-serif !important;;
+          }
+	</style>
+</head>
+
+
+<body style = "font-family: 'Arial','Microsoft YaHei' !important;">
+    
+   	   <!-- 导航条部分-->	   
+	   <nav class = "col col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-default navbar-fixed-top">
+	        <div class = "container">
+	        <div class = "navbar-header">
+	    	    <a class = "navbar-brand" ></a>
+	    	<button class="navbar-toggle" onclick = "navTap()">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+	    	</div>
+	    	 <div class = "collapse navbar-collapse" id = "menu">
+	    	    <ul style = "padding-top:0;" class = "nav navbar-nav navbar-right hidden-tablet">
+	    	    		 <li><a  class = "href" href="contact_us.html">联系我们</a></li>
+	    	    	     <li><a  class = "href" href="about_us.html">关于我们</a></li>
+	    	    	     <li><a  class = "href " href="platform.html">开放平台</a></li>
+	    	    	     <li><a  class = "href active" href="nationalmap.html">极地图</a></li>
+	    	    	     <li><a  class = "href" href="example.html">核心技术与案例</a></li>
+	    	    	     <li><a  class = "href " href="index.html">首页</a></li>
+	            </ul>
+				
+			</div>
+	    	</div>
+	    	
+	    </nav>
+	    <div class = " container-fluid nav-two">
+		    <div class = "navBlur"></div>
+			<nav class="navbar-toggle1 container"><button class="navbar-toggle" onclick = "navTap()">
+               <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+			  </button></nav>
+			<ul class = "nav navbar-nav">
+	    	    		    <li><a  class = "href" href="index.html">首页</a></li>
+	                   <li><a  class = "href" href="example.html">核心技术与案例</a></li>
+			            <li><a  class = "href active" href="nationalmap.html">极地图</a></li>
+	    	           <li><a  class = "href active" href="platform.html">开放平台</a></li>
+	    	    	    <li><a  class = "href" href="about_us.html">关于我们</a></li>
+	    	    	    <li><a  class = "href" href="contact_us.html">联系我们</a></li>
+	    	    	     </ul>
+			 <div class = "back">返回首页 </div>
+			  
+		</div>
+	
+	<!--头图部分—-->
+        <div class = "row my-head">
+		   <div class = "container">
+		       <h1>和勤联创技术有限公司</h1>
+		   </div>
+		</div>	
+	<!-- logo部分 -->
+	<div class = "sologan container">
+	    <image class = "jiditu i col-lg-4 col-lg-offset-4 col-sm-10 col-sm-offset-1 ocl-xs-10 col-xs-offset-1"  src = "img/new/jiditu.png"></image>
+	    <p style = "color:#999;font-style:italic;margin-top:120px;">一个开源的JavaScript库</p>
+	    <p style = "color:#999;font-style:italic;">使用于移动设备友好地交互地图</p>
+	</div>	
+    <!-- 发布时间	 -->
+	<div class ="container">
+	<div class = "sendtime ">
+	    <p>2019年4月8日 - 极地图正式发布</p>
+	</div>
+	</div>
+	<div class ="intro-jiditu container">
+	    <p>极地图是领先的开源 Javascript 库，适用于移动设备友好的交互式地图。它只需要大约 38kb 的 JS ，它具有大多数开发人员所需的所有映射功能。</p>
+	    <p>极地图的设计考虑了简单性，性能和可用性．它的工作原理有效地跨所有主流桌面和移动平台，可以有很多的扩展插件，有一个美丽的，易于使用和良好记录的 Apl 和一个简单的，可读的源代码，这是一个欢乐的贡献来。</p>
+	</div>
+	<!-- 地图部分 -->
+	<div class = "container">
+	    <image id = "mapcontent" src = "map"></image>
+	</div>
+	
+	<div style = "padding-top:40px;padding-bottom:1rem;"class ="intro-jiditu container">
+	    <p style = "text-indent: 0em;">在这里，我们在‘map'div中创建一个地图，添加我们选择的切片，然后在弹出窗口中添加带有一些文本的标记：</p>   
+	</div>
+	
+	<div class = "container">
+	<div class = "code1 ">
+	    <p><span  class = "var">var </span>map = Heqin.map("map').setView([<span class="number">51.505,-0.09</span>],<span class = "number">13</span>);</p>
+	    <p style = "margin-top:3rem;"> Heqin.tileLayer('<span class = "url">https://(s}.tile.openstreetmap.org/{z}/{x}/{y).png',{</span></p>
+		<p style = "text-indent: 2rem;">attribution:"<span class = "url">&lt;a&nbsp;href="https://www.openstreetmap.org/copyrlght"&gt;openstreetMap</span></p>
+	    <p style = "text-indent: 2rem;"><span class = "url">&lt;/a&gt;contributors</span>')).addTo(map);</p>
+		<p style = "margin-top:3rem;">Heqin.marker([<span class = "number">51.5，-0.09</span>]).addTo(map)</p>
+		<p style = "text-indent: 2rem;">.bindPopup("<span class = "url">A pretty CSS3 popup.Easily customizable.'</span>)</p>
+		<p style = "text-indent: 2rem;">.openPopup();</p>
+	</div>
+	</div>
+	<div class = " sp container">
+	    <div class = "container">
+		<h1 style = "font-size:2.6rem;	color:#337ab7;">特性</h1>
+		<p style = "color:#999;">极地图专注于以最精简的代码实现基础功能的完美运作。</p>
+		
+		<div class = "col-lg-4">
+		    <h1>引入即用的图层</h1>
+			<ul>
+			    <li>多种地图服务</li>
+			    <li>多种标记、窗口</li>
+				<li>矢量图层</li>
+				<li>图像叠加</li>
+				<li>支持GeoJSON格式</li>
+			</ul>
+			
+			<h1>性能优化</h1>
+			<ul>
+			    <li>移动端提供硬件加速，体验效果更加流畅</li>
+			    <li>引入css3新特性，使动画效果得到加强</li>
+			    <li>加入智能点、线、面、多边形渲染功能，能够动态简化渲染质量，以达到最快的加载速度</li>
+			    <li>使用模块化构建系统。可以根据您的需求引入对应组件</li>
+			    <li>优化后，已经消除移动端设备的延迟效果</li>
+			</ul>
+		</div>
+		
+		<div class = "col-lg-4">
+		    <h1>视觉特征</h1>
+			<ul>
+				<li>缩放、平移动画</li>
+				<li>平铺、弹出、淡入淡出动画</li>
+				<li>优质marker</li>
+				<li>视网膜分辨率支持</li>
+			</ul>
+			  <h1>自定义功能</h1>
+			<ul>
+			    <li>多种css3制作的控件，随心更换样式</li>
+			    <li>图像和HTML都通用的marker</li>
+			    <li>自定义图层、控件</li>
+			    <li>自定义地图头一个</li>
+			    <li>强大的OOP工具</li>
+			</ul>
+			   <h1>互动功能</h1>
+			<ul>
+			   <li>惯性拖动平移</li>
+			   <li>滚动变焦</li>
+			   <li>移动设备上的多指触控</li>
+			   <li>缩放到指定区域</li>
+			   <li>键盘导航</li>
+			   <li>监听事件</li>
+			   <li>标记拖动</li>
+			</ul>
+		</div>
+		
+		 <div class = "col-lg-4">
+		    <h1>浏览器支持</h1>
+			<div class = "row">
+			    <h1>PC端</h1>
+			    <ul>
+			        <li>Chrome</li>
+			        <li>Firefox</li>
+			        <li>Safari 5+</li>
+			        <li>Opera 12+</li>
+			        <li>IE 7~11</li>
+			        <li>Edge</li>
+			    </ul>
+			</div>
+			<div class = "row">
+			    <h1>移动端</h1>
+			    <ul>
+			        <li>适用于Safari(IOS 7+)</li>
+			        <li>Android浏览器 2.2+</li>
+			        <li>Chrome移动版</li>
+			        <li>Firefox for mobile</li>
+			        <li>用于Win8设备的IE 10+</li>
+			    </ul>
+			</div>
+			
+		</div>
+		</div>
+		</div>
+		
+	<div class="join container">
+	    <h1 style = "font-size:2.6rem;	color:#337ab7;">加入我们</h1>
+		<p>北京和勤联创技术有限公司成立于2014年，注册资金1000万，公司多位联合创始人此前就职于著名移动互联网巨头、移动通讯知名企业、知名投资基金等海外上市公司并担任高级管理职务。和勤联创技术有限公司核心技术和业务团队拥有多年移动互联网领域工作经历。</p>
+		<p>公司秉承创新精神并将专注于移动互联网LBS及大数据领域产品和服务的研究与开发，公司凭借多年的核心技术研发和积累，坚持以人为本，致力于为移动智能终端用户提供高品质的产品和服务。公司总部位于北京移动互联网核心科技园----融科望京中心，并在深圳、武汉、沈阳分别设立了分支机构和研发中心。</p>
+		<p>追求企业发展的同时，和勤更关注员工价值、成就、认同和快乐!开心工作，认真生活是和勤一贯倡导的公司理念。我们提供创业公司的个人发展机遇和空间，但不会让小伙伴有初创企业的顾虑与担忧，我们期待和您共创属于我们自己的明天！</p>
+		<p style ="text-indent:0; margin-top:3rem;">©2019 <a href = "index.html">Heqin</a>。地图© <a href = "#">OpenStreetMap</a> 贡献者。</p>
+	</div>
+     <div style = "margin-top:20rem;" class = "fifth container-fluid">
+		    <p style = "padding-top:3rem;">版权所有: 北京和勤联创技术有限公司</p>
+		    <p>备案号：京ICP备16011090号</p>
+	 </div>
+			
+	<script>
+	$('#btn-more').addClass('btn1');
+	$(".back").on('touchstart',function(e){
+	    $('.back').addClass('backHover');
+	});
+	$(".back").on('touchend',function(e){
+	    $('.back').removeClass('backHover');
+		$('.nav-two').slideToggle(500);
+		$('nav').slideToggle(500);
+	});
+	function navTap(){
+    if(show){
+	    $('nav').slideToggle(500);
+	}
+	else{
+	    $('nav').slideToggle(500);
+	}
+    $('.nav-two').slideToggle(500);
+	!show;
+	console.log('show');
+}
+
+	
+	function navTap(){
+	    $('.nav-two').slideToggle(500)
+	}
+	 $(document).scroll(function() {
+        $('.nav-two').slideUp(500);
+ 
+    });
+ 
+	</script>
+  </body>
+</html> 
