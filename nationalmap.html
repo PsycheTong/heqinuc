@@ -59,7 +59,7 @@
 	    	    		    <li><a  class = "href" href="index.html">首页</a></li>
 	                   <li><a  class = "href" href="example.html">核心技术与案例</a></li>
 			            <li><a  class = "href active" href="nationalmap.html">极地图</a></li>
-	    	           <li><a  class = "href active" href="platform.html">开放平台</a></li>
+	    	           <li><a  class = "href" href="platform.html">开放平台</a></li>
 	    	    	    <li><a  class = "href" href="about_us.html">关于我们</a></li>
 	    	    	    <li><a  class = "href" href="contact_us.html">联系我们</a></li>
 	    	    	     </ul>
@@ -75,8 +75,8 @@
 		</div>	
 	<!-- logo部分 -->
 	<div class = "sologan container">
-	    <image class = "jiditu i col-lg-4 col-lg-offset-4 col-sm-10 col-sm-offset-1 ocl-xs-10 col-xs-offset-1"  src = "img/new/jiditu.png"></image>
-	    <p style = "color:#999;font-style:italic;margin-top:120px;">一个开源的JavaScript库</p>
+	    <image class = "jiditu center-block"  src = "img/new/jiditu.png"></image>
+	    <p style = "color:#999;font-style:italic;margin-top:20px;">一个开源的JavaScript库</p>
 	    <p style = "color:#999;font-style:italic;">使用于移动设备友好地交互地图</p>
 	</div>	
     <!-- 发布时间	 -->
@@ -86,12 +86,14 @@
 	</div>
 	</div>
 	<div class ="intro-jiditu container">
-	    <p>极地图是领先的开源 Javascript 库，适用于移动设备友好的交互式地图。它只需要大约 38kb 的 JS ，它具有大多数开发人员所需的所有映射功能。</p>
-	    <p>极地图的设计考虑了简单性，性能和可用性．它的工作原理有效地跨所有主流桌面和移动平台，可以有很多的扩展插件，有一个美丽的，易于使用和良好记录的 Apl 和一个简单的，可读的源代码，这是一个欢乐的贡献来。</p>
+	    <p>我公司推出的极地图服务是国内领先的一套开源 Javascript 库，主要针对数据映射、地图映射、大数据可视化、WebGIS综合应用、WebGL等应用领域，不管在移动端还是PC端都有良好的兼容性。</p>
+	    <p>极地图架构设计基于软件工程低耦合、高聚合的原理，应用前端领域先进的模块化开发组件及es6特性，以致整个架构性能和可用性能够达到最佳。开发者完全可以根据具体的项目需求动态载入相关组件。同时API中还为您提供了很多的扩展插件，使您的mapping过程更加高效、丰富，同时具有良好的观赏性和可交互性。</p>
 	</div>
 	<!-- 地图部分 -->
-	<div class = "container">
-	    <image id = "mapcontent" src = "map"></image>
+	<div id = 'formap' class = "container">
+	    <div id = "mapcontent">
+		 <image class = "logo" src = "img/other/hqlogo.png"></image>
+	   </div>
 	</div>
 	
 	<div style = "padding-top:40px;padding-bottom:1rem;"class ="intro-jiditu container">
@@ -99,20 +101,50 @@
 	</div>
 	
 	<div class = "container">
-	<div class = "code1 ">
-	    <p><span  class = "var">var </span>map = Heqin.map("map').setView([<span class="number">51.505,-0.09</span>],<span class = "number">13</span>);</p>
-	    <p style = "margin-top:3rem;"> Heqin.tileLayer('<span class = "url">https://(s}.tile.openstreetmap.org/{z}/{x}/{y).png',{</span></p>
-		<p style = "text-indent: 2rem;">attribution:"<span class = "url">&lt;a&nbsp;href="https://www.openstreetmap.org/copyrlght"&gt;openstreetMap</span></p>
-	    <p style = "text-indent: 2rem;"><span class = "url">&lt;/a&gt;contributors</span>')).addTo(map);</p>
-		<p style = "margin-top:3rem;">Heqin.marker([<span class = "number">51.5，-0.09</span>]).addTo(map)</p>
-		<p style = "text-indent: 2rem;">.bindPopup("<span class = "url">A pretty CSS3 popup.Easily customizable.'</span>)</p>
-		<p style = "text-indent: 2rem;">.openPopup();</p>
+	<!-- <div class = "code1 "> -->
+	<code class = "code">
+	<span class = "tips">//创建map对象，通过HTML中地图容器的ID获取该元素</span>
+	<span class = "var">var</span> map = <span class = "var">new</span> CMMap.Map("mapcontent", {
+	    center: <span class = "var">new</span> CMMap.LngLat(<span class = "number">116.489668,40.003576</span>),
+	    zoom:15,
+	    animateEnable:<span class = "var">false</span>,
+	    zoomEnable:<span class = "var">false</span>
+	});
+	
+	<span class = "tips">//创建地图标记</span>
+	<span class = "var">var</span> marker = <span class = "var">new</span> CMMap.Marker({
+	    position: <span class = "var">new</span> CMMap.LngLat(<span class = "number">116.489668,40.003506</span>),
+	    icon: "<span class = "url">img/other/position.gif</span>",
+	});
+	
+	<span class = "tips">//在地图中添加ToolBar插件</span>
+	map.plugin(["CMMap.ToolBar"], function() {
+	    toolBar = <span class = "var">new</span> CMMap.ToolBar();
+	});
+	
+	<span class = "tips">//加载比例尺插件</span>
+	map.plugin(["CMMap.Scale"], function() {
+	    scale = <span class = "var">new</span> CMMap.Scale();
+	});
+
+	<span class = "tips">//将标记和控件加入到地图中</span>
+	marker.setMap(map);
+	map.addControl(scale);
+	map.addControl(toolBar);
+	</code>
+	    <!-- <p><span  class = "var">var </span>map = Heqin.map("map').setView([<span class="number">51.505,-0.09</span>],<span class = "number">13</span>);</p> -->
+	    <!-- <p style = "margin-top:3rem;"> Heqin.tileLayer('<span class = "url">https://(s}.tile.openstreetmap.org/{z}/{x}/{y).png',{</span></p> -->
+		<!-- <p style = "text-indent: 2rem;">attribution:"<span class = "url">&lt;a&nbsp;href="https://www.openstreetmap.org/copyrlght"&gt;openstreetMap</span></p> -->
+	    <!-- <p style = "text-indent: 2rem;"><span class = "url">&lt;/a&gt;contributors</span>')).addTo(map);</p> -->
+		<!-- <p style = "margin-top:3rem;">Heqin.marker([<span class = "number">51.5，-0.09</span>]).addTo(map)</p> -->
+		<!-- <p style = "text-indent: 2rem;">.bindPopup("<span class = "url">A pretty CSS3 popup.Easily customizable.'</span>)</p> -->
+		<!-- <p style = "text-indent: 2rem;">.openPopup();</p> -->
+	<!-- </div> -->
 	</div>
-	</div>
-	<div class = " sp container">
+	<div style = "padding-left:0"class = " sp container">
 	    <div class = "container">
 		<h1 style = "font-size:2.6rem;	color:#337ab7;">特性</h1>
-		<p style = "color:#999;">极地图专注于以最精简的代码实现基础功能的完美运作。</p>
+		<p style = "color:#999;margin-bottom:1rem;">极地图专注于以最精简的代码实现基础功能的完美运作。</p>
 		
 		<div class = "col-lg-4">
 		    <h1>引入即用的图层</h1>
@@ -134,7 +166,7 @@
 			</ul>
 		</div>
 		
-		<div class = "col-lg-4">
+		<div  class = "col-lg-4">
 		    <h1>视觉特征</h1>
 			<ul>
 				<li>缩放、平移动画</li>
@@ -164,7 +196,7 @@
 		
 		 <div class = "col-lg-4">
 		    <h1>浏览器支持</h1>
-			<div class = "row">
+			<div style = "padding:0;" class = "container">
 			    <h1>PC端</h1>
 			    <ul>
 			        <li>Chrome</li>
@@ -175,7 +207,7 @@
 			        <li>Edge</li>
 			    </ul>
 			</div>
-			<div class = "row">
+			<div style = "padding:0;" class = "container">
 			    <h1>移动端</h1>
 			    <ul>
 			        <li>适用于Safari(IOS 7+)</li>
@@ -232,7 +264,112 @@
         $('.nav-two').slideUp(500);
  
     });
- 
+     // mapcontent
+
 	</script>
+	<script type="text/javascript" src="js/JSWrap.js"></script>
+		<script>
+		$('a.cmmap-logo').empty();
+		$(".layer").on('scroll',function(){
+		    alert('scroll');
+		
+		});
+		var map;
+
+		function mapInit() {
+			map =   new CMMap.Map("mapcontent", {
+			    center: new CMMap.LngLat(116.489668,40.003576),
+				zoom:15,
+				animateEnable:false,
+				zoomEnable:false});
+
+			    var marker = new CMMap.Marker({
+					position: new CMMap.LngLat(116.489668,40.003506),
+					icon: "img/other/position.gif",
+				});
+					//在地图中添加ToolBar插件
+			map.plugin(["CMMap.ToolBar"], function() {
+				toolBar = new CMMap.ToolBar();
+			});
+			//加载比例尺插件
+			map.plugin(["CMMap.Scale"], function() {
+				scale = new CMMap.Scale();
+			});
+          	marker.setMap(map);
+			  map.addControl(scale);
+              map.addControl(toolBar);
+			 toolBar.hideRuler();
+			
+            
+		    //实例化信息窗体
+            var title = '北京和勤联创科技有限公司',
+                content = [];
+            content.push("<img src='http://tpc.googlesyndication.com/simgad/5843493769827749134'><p id = 'map1'style='display:block;'>地址：北京市朝阳区融科望京中心B座1202室<p><p  style='display:block;' >电话：010-57018206</p><p style = 'display:block;'>邮箱：HEQINLIANCHUANG@.COM</p>");
+            
+            
+            var infoWindow = new CMMap.InfoWindow({
+                isCustom: true,  //使用自定义窗体
+                content: createInfoWindow(title, content.join('</br>')),
+                offset: new CMMap.Pixel(40, -40)
+            });
+            
+            //构建自定义信息窗体
+            function createInfoWindow(title, content) {
+                var info = document.createElement("div");
+                info.className = "custom-info input-card content-window-card";
+            
+                //可以通过下面的方式修改自定义窗体的宽高
+                //info.style.width = "400px";
+                // 定义顶部标题
+                var top = document.createElement("div");
+                var titleD = document.createElement("div");
+                var closeX = document.createElement("img");
+                top.className = "info-top";
+                titleD.innerHTML = title;
+                closeX.src = "https://webapi.amap.com/images/close2.gif";
+                closeX.onclick = closeInfoWindow;
+            
+                top.appendChild(titleD);
+                top.appendChild(closeX);
+                info.appendChild(top);
+            
+                // 定义中部内容
+                var middle = document.createElement("div");
+                middle.className = "info-middle";
+                middle.style.backgroundColor = 'white';
+                middle.innerHTML = content;
+                info.appendChild(middle);
+            
+                // 定义底部内容
+                var bottom = document.createElement("div");
+                bottom.className = "info-bottom";
+                bottom.style.position = 'relative';
+                bottom.style.top = '0px';
+                bottom.style.margin = '0 auto';
+                var sharp = document.createElement("img");
+                sharp.src = "https://webapi.amap.com/images/sharp.png";
+                bottom.appendChild(sharp);
+                info.appendChild(bottom);
+                return info;
+            }
+            
+            //关闭信息窗体
+            function closeInfoWindow() {
+                map.clearInfoWindow();
+            }
+            marker.on("click", function(e) {
+            	infoWindow.open(map, marker.getPosition());
+            });
+            
+            infoWindow.open(map, marker.getPosition());
+        }
+        if (window.attachEvent) {
+            window.attachEvent("onload", mapInit);//IE
+        } else {
+            window.addEventListener("load", mapInit, false);//FF
+        }
+	 
+		</script>
+	
   </body>
 </html> 

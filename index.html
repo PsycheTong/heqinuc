@@ -413,12 +413,8 @@ $(document).ready(function(){
 	$("#second-list2 .list-felx2 li.list-item").on("click",function(){
 	     window.location.href="platform.html";
 	})
-	$("#text4 .box4 .card-item .third-img").on('click',function(){
-	    $(this).addClass('bigimg');
-        timeoutId = setTimeout(function () {
-           window.location.href="example.html";
-		    clearTimeout(timeoutId);
-        }, 500);
+	$("#text4 .box4,#text4 .card-item").on('click',function(){
+	    window.location.href="example.html";
 		
 	});
 	
